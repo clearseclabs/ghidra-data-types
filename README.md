@@ -1,5 +1,8 @@
 # Ghidra Data Types - Building a Custom Ghidra GDT from NDIS Windows DDK Headers
 
+![image](https://github.com/user-attachments/assets/051c584b-5e63-43fe-beb7-65edbfca4054)
+
+
 ## About
 
 This repository contains a Visual Studio template project for building an NDIS filter driver. The project isn't meant to show you how to build a driver, but rather demonstrate how Visual Studio can be used to create a custom preprocessed header that Ghidra can use to extract all the NDIS related data types. 
@@ -46,9 +49,8 @@ graph TD;
 
 All of the steps and more are detailed in the blog posts linked above.
 
-## Going Deeper
+## Ready to Dive Deeper? 🌊
 
-![clearseclabs LLC]()
+<div align=center><img src="https://github.com/user-attachments/assets/cdcd257f-1369-4d63-974b-62181323b43c"/></div
 
-If this type of work interests and and you want to dive a bit deeper, consider checking out one of Clearseclab's training courses. This in depth example helping you better reverse engineering binaries is just one of many available to you in the trainings from Clearseclabs LLC. 
-
+If this example and the world of reverse engineering piqued your interest, why not take your skills to the next level with Clearseclab's comprehensive training courses? This in-depth example is just the tip of the iceberg. Our courses offer a treasure trove of knowledge to help you master reverse engineering and more. Join us at Clearseclabs LLC and unlock a world of possibilities! [Learn more about Clearseclab's training courses](https://www.clearseclabs.com/#portfolio).
