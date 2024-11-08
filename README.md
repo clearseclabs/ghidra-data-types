@@ -40,6 +40,16 @@ graph TD;
   F1 -->|Choose GDT File| F2[Data Types Available in Project]
 ```
 
+### Prerequisites
+
+1. **Install the Windows Driver Development Kit (DDK)**:
+   - Download the Windows Driver Kit (WDK) from the official Microsoft website: [Download WDK](https://learn.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk)
+
+2. **Install Visual Studio 2022**:
+   - Download Visual Studio 2022 from the official Microsoft website: [Download Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
+
+### Steps
+
 1. Using the included project, open [ndis-headers.sln](ndis-headers/ndis-headers.sln) with Visual Studio 2022.
 2. Right-click on the file [ndis-headers.c](ndis-headers/ndis-headers.c) and click *Compile*.
 3. Take the resulting preprocessed file found at `ndis-headers\x64\Debug\ndis-headers.i` and included in the repo at [ndis-headers.i](gdts/headers/ndis-headers.i) and clean up the file using this [Cyberchef recipe]( https://gchq.github.io/CyberChef/#recipe=Find_/_Replace(%7B'option':'Regex','string':'%23pragma%5B%5E%5C%5Cn%5D%20%5C%5Cn'%7D,'',true,false,false,false)Find_/_Replace(%7B'option':'Regex','string':'(?:__forceinline%7C__inline)((?:%5B%5E%7B%5D*%5C%5Cn%5B%5E%7B%5D*))%5C%5C%7B(?:%5C%5C%7B%5B%5E%7B%7D%5D*%5C%5C%7D%7C%5B%5E%7B%7D%5D)*%5C%5C%7D'%7D,'$1;',true,false,true,false)Find_/_Replace(%7B'option':'Regex','string':'__declspec%5C%5C(%5B%5E%5C%5C)%5D%20%5C%5C)%20'%7D,'',true,false,true,false).
