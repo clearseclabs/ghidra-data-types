@@ -18,6 +18,8 @@ The article discusses how to create custom data types in Ghidra, a software reve
 
 - [Everyday Ghidra: Ghidra Data Types - Creating Custom GDTs From Windows Headers - Part 2](https://medium.com/@clearbluejar/everyday-ghidra-ghidra-data-types-creating-custom-gdts-from-windows-headers-part-2-39b8121e1d82)
 
+The article provides a step-by-step guide on how to create custom Ghidra Data Type (GDT) files from Windows headers. It explains the importance of data types in reverse engineering and how Ghidra's default decompilation of the Windows `tcpip.sys` file fell short due to missing data types. The author then demonstrates how to leverage Visual Studio's preprocessor to generate a preprocessed header file, which can then be used to create a custom GDT file containing NDIS-related data types. 
+
 ## Steps to Preprocess a Custom Header with Visual Studio 2022
 
 ```mermaid
